@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body style="background-color: black;">
+    <div id="box">
+        <div id="gradient"></div>
+        <div id="mask">
+            <form>
+                <fieldset>
+                    <legend style="color: yellowgreen;"><img src="logo.png" style="height: 60px;"> <span style="font-size: 29px;">QuickHire</span></legend>
+                    <div class="input-group">
+                        <label for="user" >Username</label><br>
+                        <input type="text" placeholder="Username" required>
+                        <i class='bx bx-user'></i>
+                    </div>
+                    <div class="input-group">
+                        <label for="email" >E-mail</label><br>
+                        <input type="email" placeholder="Email" required>
+                        <i class='bx bx-envelope'></i>
+                    </div>
+                    <div class="input-group">
+                        <label for="password" >Password</label><br>
+                        <input type="password" placeholder="Password" required>
+                        <i class='bx bx-lock-alt' ></i>
+                    </div>
+                    <button type="submit" class="signup-btn">Sign Up
+                    </button>
+                </fieldset>
+            </form>
+            <div id="login">
+                <p class="login-text">Already have an account? <a href="login.html">Log In</a></p>
+            </div>
+            <footer>
+                <p id="copywrite">CodeCollab &copy 2024</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

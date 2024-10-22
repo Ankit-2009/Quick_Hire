@@ -1,0 +1,197 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+#box{
+    position: absolute;
+    width: 30vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 25px;
+    overflow: hidden;
+    animation: glow 4s linear infinite;
+}
+
+#gradient{
+    height: 102vh;
+    width: 20vw;
+    background: linear-gradient(rgb(0, 173, 0), greenyellow, greenyellow);
+    position: absolute;
+    z-index: 1;
+    animation: rotate 4s linear infinite;
+}
+
+#mask{
+    height: 78vh;
+    width: 29vw;
+    position: absolute;
+    z-index: 2;
+    background: black;
+    border-radius: 20px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    animation: glow 4s linear infinite;
+}
+
+@keyframes glow {
+    0%{
+        box-shadow: none;
+    }
+    25%{
+        box-shadow: 0 0 10px rgb(71, 255, 47);
+    }
+    50%{
+        box-shadow: none;
+    }
+    75%{
+        box-shadow: 0 0 10px yellowgreen;
+    }
+    100%{
+        box-shadow: none;
+    }
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+#mask form fieldset{
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+#mask form{
+    display: flex;
+    align-items: flex-start;
+    height: 370px;
+}
+
+#mask form fieldset legend{
+    position: relative;
+    text-shadow: 0 0 15px yellowgreen;
+    margin-bottom: 20px;
+}
+
+#mask form fieldset legend img{
+    position: relative;
+    top:23px;
+}
+
+label{
+    color: white;
+    font-size: 20px;
+    text-shadow: 0 0 3px greenyellow;
+}
+
+.input-group i{
+    position: relative;
+    bottom: 35px;
+    left: 100px;
+    font-size: 28px;
+    color: green;
+    text-shadow: 0 0 10px yellowgreen;
+}
+
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    font-size: 16px;
+    animation: glow 6s linear infinite;
+}
+
+.login-btn {
+    width: 80%;
+    margin-top: 30px;
+    padding: 10px;
+    background: linear-gradient(rgb(0, 173, 0), greenyellow);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    animation: glow 6s linear infinite;
+}
+
+.login-btn:hover {
+    background-color: #6eb300;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+#fp{
+    margin: 40px;
+    /* padding: 0; */
+    /* position: relative;
+    transform: translateY(-65%); */
+    position: absolute;
+    bottom: 65px;
+}
+
+.forgot-password {
+    margin: 0;
+    padding: 0;
+    display: block;
+    text-align: right;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.forgot-password:hover{
+    text-decoration: underline;
+    color: yellowgreen;
+}
+
+.signup-text {
+    color: yellowgreen;
+}
+
+.signup-text a {
+    color: #fafcff;
+    text-decoration: none;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+    color: yellowgreen;
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3)
+}
+
+footer{
+    position: absolute;
+    bottom: 45px;
+}
+
+#copywrite{
+    color: rgb(0, 203, 0);
+}
